@@ -3,6 +3,14 @@
     "job": "Dev Front End & QA",
     "github": "brunodorea",
     "banner": "https://images.unsplash.com/photo-1611087889903-b4837b46857c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "favorites": {
+      "AluraTubes Favoritos": [
+          {
+              "user": "omariosouto",
+              "url": "https://www.youtube.com/c/DevSoutinho"
+          }
+      ]
+  },
     "playlists": {
         "games": [
           {

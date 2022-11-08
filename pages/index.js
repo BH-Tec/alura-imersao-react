@@ -1,9 +1,12 @@
-import config from "../config.json";
-import styled from "styled-components";
-import { CSSReset } from "../src/components/CSSReset";
-import Menu from "../src/components/Menu";
-import { StyledTimeline } from "../src/components/Timeline";
 import React from "react";
+import styled from "styled-components";
+
+import config from "../config.json";
+import Menu from "../src/components/Menu";
+
+import { StyledFavorites } from "../src/components/Favorites";
+import { CSSReset } from "../src/components/CSSReset";
+import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
     const [ valorDoFiltro, setValorDoFiltro ] = React.useState('');
@@ -18,6 +21,7 @@ function HomePage() {
             }}>
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
                 <Header />
+                <Favorites favorites={config.favorites} />
                 <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
@@ -83,8 +87,6 @@ function Timeline({searchValue, ...props}) {
         <StyledTimeline>
             {playlistNames.map((playlistName) => {
                 const videos = props.playlists[playlistName];
-                // console.log(playlistName);
-                // console.log(videos);
                 return (
                     <section key={playlistName}>
                         <h2>{playlistName}</h2>
@@ -108,5 +110,34 @@ function Timeline({searchValue, ...props}) {
                 )
             })}
         </StyledTimeline>
+    )
+}
+
+function Favorites(props) {
+    const favoritesTitle = Object.keys(props.favorites)
+
+    return (
+        <StyledFavorites className="comp">
+            {favoritesTitle.map((FavSectionTitle) => {
+                const favorites = props.favorites[favoritesTitle];
+                return (
+                    <section key="Favorites">
+                        <h2>{FavSectionTitle}</h2>
+                        <div key={FavSectionTitle}>
+                            {favorites.map((item) => {
+                                return (
+                                    <a key={item.url} href={item.url} target="_blank">
+                                        <img className="favorites-img" src={`https://github.com/${item.user}.png`} />
+                                        <span>
+                                            @{item.user}
+                                        </span>
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </section>
+                )
+            })}
+        </StyledFavorites>
     )
 }
