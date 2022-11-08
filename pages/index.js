@@ -32,7 +32,7 @@ const StyledHeader = styled.div`
 
     img {
         width: 100%;
-        height: 230px;
+        height: 345px;
     }
 
     .user-info {
