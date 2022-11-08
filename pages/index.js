@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head';
 import styled from "styled-components";
 
 import config from "../config.json";
@@ -14,6 +15,11 @@ function HomePage() {
     return (
         <>
             <CSSReset />
+            <Head>
+                <title>AluraTube | Bruno H</title>
+                <link rel="icon" href="https://www.youtube.com/s/desktop/233efd8f/img/favicon.ico" />
+                {/* <link rel="icon" href="./pages/favicon.ico" /> */}
+            </Head>
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -51,12 +57,6 @@ const StyledHeader = styled.div`
         height: 80px;
         border-radius: 50%;
     }
-`;
-
-const StyledBanner = styled.div`
-    background-color: red;
-    background-image: url(${config.banner})
-    height: 230px;
 `;
 
 function Header() {
