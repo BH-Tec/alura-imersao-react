@@ -1,12 +1,10 @@
 import React from "react";
-import Head from 'next/head';
 import styled from "styled-components";
 
 import config from "../config.json";
 import Menu from "../src/components/Menu";
 
 import { StyledFavorites } from "../src/components/Favorites";
-import { CSSReset } from "../src/components/CSSReset";
 import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
@@ -14,12 +12,6 @@ function HomePage() {
     
     return (
         <>
-            <CSSReset />
-            <Head>
-                <title>AluraTube | Bruno H</title>
-                <link rel="icon" href="https://www.youtube.com/s/desktop/233efd8f/img/favicon.ico" />
-                {/* <link rel="icon" href="./pages/favicon.ico" /> */}
-            </Head>
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -39,6 +31,8 @@ function HomePage() {
 export default HomePage
 
 const StyledHeader = styled.div`
+    
+    background-color: ${({theme}) => theme.backgroundLevel1};
 
     img {
         width: 100%;
