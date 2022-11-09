@@ -19,10 +19,10 @@ function HomePage() {
             }}>
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
                 <Header />
-                <Favorites favorites={config.favorites} />
                 <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
                 </Timeline>
+                <Favorites favorites={config.favorites} />
             </div>
         </>
     );
@@ -35,8 +35,10 @@ const StyledHeader = styled.div`
     background-color: ${({theme}) => theme.backgroundLevel1};
 
     img {
+        object-fit: cover;
         width: 100%;
-        height: 345px;
+        height: 240px;
+        // margin-top: 56px;
     }
 
     .user-info {
@@ -51,6 +53,12 @@ const StyledHeader = styled.div`
         height: 80px;
         border-radius: 50%;
     }
+    
+    .user-info > div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 `;
 
 function Header() {
@@ -62,7 +70,7 @@ function Header() {
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
                     <h2>
-                        {config.name}
+                        {config.name} | {config.instagram}
                     </h2>
                     <p>
                         {config.job}

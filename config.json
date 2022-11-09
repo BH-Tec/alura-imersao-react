@@ -2,7 +2,8 @@
     "name": "Bruno",
     "job": "Dev Front End & QA",
     "github": "brunodorea",
-    "banner": "https://images.unsplash.com/photo-1611087889903-b4837b46857c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "instagram": "@bruno.h_",
+    "banner": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
     "favorites": {
       "AluraTubes Favoritos": [
           {
@@ -14,43 +15,58 @@
     "playlists": {
         "games": [
           {
-            "title": "Marvel Future Fight",
-            "url": "https://www.youtube.com/watch?v=CEKuKZGHQ1Q",
-            "thumb": "https://i.ytimg.com/an_webp/CEKuKZGHQ1Q/mqdefault_6s.webp?du=3000&sqp=CNippJsG&rs=AOn4CLDJanliRdBDdNaE1-3hv3mjaBCCtQ"
+            "title": "Marvel Future Fight - Update Nov. 2022",
+            "url": "https://www.youtube.com/watch?v=zqpkGcpuW5s",
+            "thumb": "https://img.youtube.com/vi/zqpkGcpuW5s/hqdefault.jpg"
+          },
+          {
+            "title": "Real Racing 3 - Update 10.8",
+            "url": "https://www.youtube.com/watch?v=AU4Ukp6xFKs",
+            "thumb": "https://img.youtube.com/vi/AU4Ukp6xFKs/hqdefault.jpg"
+          },
+          {
+            "title": "",
+            "url": "",
+            "thumb": "https://img.youtube.com/vi/____/hqdefault.jpg"
           }
           ],
         "developer": [
           {
             "title": "Personalize sua figurinha da Copa com React Native",
             "url": "https://www.youtube.com/watch?v=Z1aSHtPCAP4",
-            "thumb": "https://i.ytimg.com/an_webp/Z1aSHtPCAP4/mqdefault_6s.webp?du=3000&sqp=CPaxpJsG&rs=AOn4CLDCrbYfebZ_ObKu5AX8oJtm_erilQ"
+            "thumb": "https://img.youtube.com/vi/Z1aSHtPCAP4/hqdefault.jpg"
           },
           {
             "title": "Crie sua figurinha da copa com HTML + CSS + JS",
             "url": "https://www.youtube.com/watch?v=sswJisbD2CY",
-            "thumb": "https://i.ytimg.com/an_webp/sswJisbD2CY/mqdefault_6s.webp?du=3000&sqp=CLKrpJsG&rs=AOn4CLBLwXjBt9027vtoLEGXim7yQjZdiQ"
+            "thumb": "https://img.youtube.com/vi/sswJisbD2CY/hqdefault.jpg"
           },
           {
             "title": "",
             "url": "",
-            "thumb": "/hqdefault.jpg"
+            "thumb": "https://img.youtube.com/vi/____/hqdefault.jpg"
           }
         ],
         "musicas": [
           {
             "title": "Pearl Jam - Black",
             "url": "https://www.youtube.com/watch?v=5ZH2it92ZmA",
-            "thumb": "https://i.ytimg.com/vi/5ZH2it92ZmA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCruZsrhY78wmrx4QF9QL-P1oamDQ"
+            "thumb": "https://img.youtube.com/vi/5ZH2it92ZmA/hqdefault.jpg"
           },
           {
             "title": "Bad Wolves - Zombie",
             "url": "https://www.youtube.com/watch?v=9XaS93WMRQQ",
-            "thumb": "https://i.ytimg.com/vi/9XaS93WMRQQ/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAS9j7zBn_1zIhGPdKzuDBN_-L9YA"
+            "thumb": "https://img.youtube.com/vi/9XaS93WMRQQ/hqdefault.jpg"
           },
           {
             "title": "Jimmy e Rats - Polca Paciencia",
             "url": "https://www.youtube.com/watch?v=gYW_w7ZNSYw",
-            "thumb": "https://i.ytimg.com/vi/gYW_w7ZNSYw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2gFvKPk0VeIwT_7Q7FGi8nBgMzg"
+            "thumb": "https://img.youtube.com/vi/gYW_w7ZNSYw/hqdefault.jpg"
+          },
+          {
+            "title": "",
+            "url": "",
+            "thumb": "https://img.youtube.com/vi/____/hqdefault.jpg"
           }
         ]
       }
