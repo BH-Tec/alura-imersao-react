@@ -10,4 +10,4 @@ Rápida descrição do objetivo de fazer esse projeto
 | 🔥 Desafio        | [Design no Figma](https://www.figma.com/file/ss7Dp5jPyPOUAgUm1sutxM/Aluratube-(Copy)?node-id=0%3A1)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://raw.githubusercontent.com/BH-Tec/alura-imersao-react/main/assets/preview.jpg#vitrinedev)
+![](https://raw.githubusercontent.com/BH-Tec/alura-imersao-react/main/assets/preview.png#vitrinedev)
