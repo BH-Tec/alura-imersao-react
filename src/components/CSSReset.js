@@ -6,6 +6,8 @@ export const CSSReset = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    //ocultando barra de rolagem no eixo x
+    overflow-x: hidden;
   }
 
   body {

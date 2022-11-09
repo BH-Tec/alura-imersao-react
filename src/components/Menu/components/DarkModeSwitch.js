@@ -13,9 +13,13 @@ const StyledSwitch = styled.div`
   justify-content: space-around;
   border-radius: 10000px;
   position: relative;
+  //ocultando barra de rolagem no eixo y
+  overflow-y: hidden;
 
   label {
     width: 50px;
+    //ocultando barra de rolagem no eixo y
+    overflow-y: hidden;
   }
 
   span { 
