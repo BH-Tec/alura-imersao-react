@@ -34,13 +34,6 @@ const StyledHeader = styled.div`
     
     background-color: ${({theme}) => theme.backgroundLevel1};
 
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 240px;
-        // margin-top: 56px;
-    }
-
     .user-info {
         display: flex;
         align-items: center;
@@ -48,6 +41,7 @@ const StyledHeader = styled.div`
         padding: 16px 32px;
         gap: 16px;
     }
+
     .user-info > img {
         width: 80px;
         height: 80px;
@@ -59,13 +53,21 @@ const StyledHeader = styled.div`
         flex-direction: column;
         gap: 8px;
     }
+
+`;
+
+const StyledBanner = styled.div`
+    background-image: url(${config.banner});
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
 `;
 
 function Header() {
     return (
         <StyledHeader>
-            <img src={config.banner} />
-            {/* <StyledBanner /> */}
+            <StyledBanner />
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
