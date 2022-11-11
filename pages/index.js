@@ -13,13 +13,10 @@ function HomePage() {
     const [ valorDoFiltro, setValorDoFiltro ] = React.useState('')
     const [ playlists, setPlaylists ] = React.useState({})     // config.playlists
 
-    React.useEffect(() => {
-        console.log("useEffect")
-        
+    React.useEffect(() => {        
         service
             .getAllVideos()
             .then((dados) => {
-                console.log(dados.data)
                 const novasPlaylists = { ...playlists }
                 dados.data.forEach((video) => {
                     if(!novasPlaylists[video.playlist]) {
