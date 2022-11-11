@@ -21,10 +21,10 @@ function useForm(propsDoForm) {
     }
 }
 
-const NEXT_PROJECT_URL = process.env.NEXT_PROJECT_URL
+const NEXT_PUBLIC_PROJECT_URL = process.env.NEXT_PUBLIC_PROJECT_URL
 const NEXT_PUBLIC_KEY = process.env.NEXT_PUBLIC_KEY
 const supabase = createClient(
-    process.env.NEXT_PUBLIC_URL,
+    process.env.NEXT_PUBLIC_PROJECT_URL,
     process.env.NEXT_PUBLIC_KEY,
 )
 
