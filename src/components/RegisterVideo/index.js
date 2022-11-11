@@ -2,6 +2,8 @@ import React from "react";
 import { StyledRegisterVideo } from "./styles";
 import { createClient } from '@supabase/supabase-js'
 
+import config from "../../../config.json";
+
 function useForm(propsDoForm) {
     const [ values, setValues ] = React.useState(propsDoForm.initialValues)
 
@@ -49,7 +51,7 @@ export default function RegisterVideo() {
     })
     const [ formVisivel, setFormVisivel ] = React.useState(false)
     
-    console.log(supabase.from())
+    const playlistNames = Object.keys(config.playlists)
 
     return (
         <StyledRegisterVideo>
@@ -64,7 +66,7 @@ export default function RegisterVideo() {
                             title: formCadastro.values.titulo,
                             url: formCadastro.values.url,
                             thumb: getThumbnail(formCadastro.values.url),
-                            playlist: "jogos",
+                            playlist: formCadastro.values.playlist,
                         })
                         .then((oqueveio) => {
                             console.log(oqueveio)
@@ -78,6 +80,7 @@ export default function RegisterVideo() {
                     }}>
                     <div>
                         <button className="close-modal" onClick={() => setFormVisivel(false)}> x </button>
+
                         <input 
                             placeholder="Titulo do vídeo" 
                             name="titulo"
@@ -90,6 +93,16 @@ export default function RegisterVideo() {
                             value={formCadastro.values.url}
                             onChange={formCadastro.handleChange}
                         />
+                    
+                        <select name="playlist" onChange={formCadastro.handleChange}>
+                            <option key="Add Novos" value="Add Novos">Novos</option>
+                            {playlistNames.map((playlistName) => {
+                            return (
+                                <option key={playlistName} value={playlistName}>{playlistName}</option>
+                            )
+                            })}
+                        </select>
+
                         <button 
                             type="submit"
                         >Cadastrar</button>
